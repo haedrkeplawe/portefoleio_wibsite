@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body style="background-color: #192444;">
+  <div class="contaienr">
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <div class="score">
+        <h2>Score</h2>
+        <span>0</span>
+      </div>
+    </nav>
+    <section>
+      <div style="display: flex;" class="choser">
+        <div class="ting">
+          <img src="./images/bg-triangle.svg" alt="">
+          <div class=" playerChoose rockk" data-score=0 data-type="rock">
+            <img src="./images/icon-rock.svg" alt="">
+          </div>
+          <div class=" playerChoose paperr" data-score=1 data-type="paper">
+            <img src="./images/icon-paper.svg" alt="">
+          </div>
+          <div class=" playerChoose mecass" data-score=2 data-type="scissors">
+            <img src="./images/icon-scissors.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div style="display: none;" class="play">
+        <div class="player">
+        </div>
+        <div class="result">
+          <h2></h2>
+          <a href="./index.html">PLAY AGAIN</a>
+        </div>
+        <div class="compeoter">
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
