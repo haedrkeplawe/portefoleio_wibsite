@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 15px;
+  border: 1px solid #ffffff75;
+  padding: 1rem;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 2rem;
+  background-color: #f8f7f7;
+  border-radius: 21px;
+  justify-content: center;
+  align-items: center;
+}
+.score p {
+  font-size: 3rem;
+}
+.choser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 7rem 0rem;
+}
+.ting {
+  position: relative;
+}
+.rockk {
+  position: absolute;
+  cursor: pointer;
+  top: -23px;
+  left: -13px;
+}
+.rockk img {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 20px solid #dc3f5d;
+}
+.paperr {
+  position: absolute;
+  cursor: pointer;
+  top: -23px;
+  right: -20px;
+}
+.paperr img {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 17px solid #4764f2;
+}
+.mecass {
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mecass img {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 20px solid #efa008;
+}
+.play {
+  justify-content: space-between;
+  width: 64%;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+}
+.play .player h2,
+.play .compeoter h2 {
+  padding: 3rem 0rem;
+}
+.play .player img,
+.play .compeoter img {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 121px;
+  height: 124px;
+}
+.play .player img.rock,
+.play .compeoter img.rock {
+  border: 20px solid #dc3f5d;
+}
+.play .player img.paper,
+.play .compeoter img.paper {
+  border: 20px solid #4764f2;
+}
+.play .player img.scissors,
+.play .compeoter img.scissors {
+  border: 20px solid #efa008;
+}
+.result {
+  text-align: center;
+}
+.result a {
+  display: flex;
+  justify-content: center;
+  padding: 0.7rem;
+  border-radius: 9px;
+  border: none;
+  background: white;
+  width: 10rem;
+  margin-top: 0.6rem;
+  color: black;
+  text-decoration: none;
+}
+@media (max-width:676px) {
+  nav {
+    flex-direction: column;
+  }
+  .score {
+    width: fit-content;
+    margin-top: 10px;
+  }
+  .play {
+    flex-direction: column;
+  }
+  .compeoter {
+    text-align: center;
+  }
+  .play .player h2, .play .compeoter h2 {
+    padding: 1rem 0rem;
+  }
+}
