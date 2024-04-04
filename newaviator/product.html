@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="aviator">
+        <p>0129- 12323-123123</p>
+        <h2><a href="#">AVIATO</a></h2>
+        <ul>
+          <div class="cart">
+            <li>
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart
+            </li>
+            <div class="products">
+              <div class="product">
+                <div>
+                  <img src="./img/cart-1.jpg" alt="" />
+                  <div class="info">
+                    <h5>Ladees Bag</h5>
+                    <h6>1+12500.00</h6>
+                    <p>$1200</p>
+                  </div>
+                </div>
+                <span class="delete">+</span>
+              </div>
+              <div class="product">
+                <div>
+                  <img src="./img/cart-2.jpg" alt="" />
+                  <div class="info">
+                    <h5>Ladees Bag</h5>
+                    <h6>1+12500.00</h6>
+                    <p>$1200</p>
+                  </div>
+                </div>
+                <span class="delete">+</span>
+              </div>
+              <div class="total">
+                <h4>Total</h4>
+                <h5>$1113.00</h5>
+              </div>
+              <div class="buttons">
+                <button>VIEW CART</button>
+                <button>CHECKOUT</button>
+              </div>
+            </div>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <li>Search</li>
+            <div><input type="text" placeholder="Search" /></div>
+          </div>
+          <li>EN <i class="fa-solid fa-angle-down"></i></li>
+        </ul>
+      </div>
+      <nav>
+        <div class="head">
+          <h2>Main Menu</h2>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul>
+          <li><a href="#">HOME </a></li>
+          <li><a href="">SHOP</a><i class="fa-solid fa-angle-down"></i></li>
+          <li><a href="">PAGES</a><i class="fa-solid fa-angle-down"></i></li>
+          <li><a href="">BLOG</a><i class="fa-solid fa-angle-down"></i></li>
+          <li><a href="">ELEMENTS</a><i class="fa-solid fa-angle-down"></i></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="product-page">
+      <div class="head">
+        <div class="left">
+          Home
+          <p>/</p>
+          Shop
+          <p>/</p>
+          Single Product
+        </div>
+        <div class="right">
+          <span><i><</i>next</span>
+          <p>/</p>
+          <span>preview <i>></i></span>
+        </div>
+      </div>
+      <div class="eclipse">
+        <div class="image">
+          <div class="top">
+            <div>
+              <img src="./img/product-1.jpg" alt="" />
+              <img src="./img/product-2.jpg" alt="" />
+              <img src="./img/product-3.jpg" alt="" />
+              <img src="./img/product-4.jpg" alt="" />
+              <img src="./img/product-5.jpg" alt="" />
+              <img src="./img/product-6.jpg" alt="" />
+            </div>
+            <div class="button">
+              <span onclick="left() ;clearInterval(product_interval)"><</span>
+              <span onclick="right() ;clearInterval(product_interval)">></span>
+            </div>
+          </div>
+          <div class="doun">
+            <span onclick="goto(0)"
+              ><img src="./img/product-1.jpg" alt=""
+            /></span>
+            <span onclick="goto(1)"
+              ><img src="./img/product-2.jpg" alt=""
+            /></span>
+            <span onclick="goto(2)"
+              ><img src="./img/product-3.jpg" alt=""
+            /></span>
+            <span onclick="goto(3)"
+              ><img src="./img/product-4.jpg" alt=""
+            /></span>
+            <span onclick="goto(4)"
+              ><img src="./img/product-5.jpg" alt=""
+            /></span>
+            <span onclick="goto(5)"
+              ><img src="./img/product-6.jpg" alt=""
+            /></span>
+          </div>
+        </div>
+        <div class="info">
+          <h2>Eclipse Crossbody</h2>
+          <p>$300</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+            <br />
+            ipsum dicta quod, quia doloremque aut deserunt commodi quis. Totam a
+            <br />
+            consequatur beatae nostrum, earum consequuntur? Eveniet consequatur
+            <br />
+            ipsum dicta recusandae. <br />
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt,
+            <br />
+            velit, sunt temporibus, nulla accusamus similique sapiente tempora,
+            <br />
+            at atque cumque assumenda minus asperiores est esse sequi dolore
+            <br />
+            magnam. Debitis, explicabo.
+          </p>
+          <div class="color">
+            <h5>color:</h5>
+            <div>
+              <span style="background: #8da1cd"></span
+              ><span style="background: black"></span
+              ><span style="background: #e6e2d6"></span>
+            </div>
+          </div>
+          <div class="size">
+            <h5>Size:</h5>
+            <div class="input">
+              <p>S</p>
+              <span><i class="fa-solid fa-angle-down"></i> </span>
+              <ul>
+                <li>S</li>
+                <li>M</li>
+                <li>L</li>
+                <li>XL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="quantity">
+            <h5>Quantity:</h5>
+            <span onclick="remove()">-</span>
+            <div class="input">0</div>
+            <span onclick="add()">+</span>
+          </div>
+          <div class="categories">
+            <h5>Categories:</h5>
+            <span>Products</span>
+            <span>Soap</span>
+          </div>
+          <button>ADD TO CART</button>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="buttons">
+          <button>Details</button>
+          <button>Reviews(3)</button>
+        </div>
+        <div class="description">
+          <h4>Product Description</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Sed ut per
+            spici
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+            delectus quidem repudiandae veniam distinctio repellendus magni
+            pariatur molestiae asperiores animi, eos quod iusto hic doloremque
+            iste a, nisi iure at unde molestias enim fugit, nulla voluptatibus.
+            Deserunt voluptate tempora aut illum harum, deleniti laborum animi
+            neque, praesentium explicabo, debitis ipsa?
+          </p>
+        </div>
+        <div class="review">
+          <div>
+            <img src="./img/avater-1.jpg" alt="" />
+            <div class="info">
+              <h6>JONATHON ANDREW</h6>
+              <p>July 02, 2015, at 11:34 <i>+</i> Reply</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                at magna ut ante eleifend eleifend.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Quod laborum minima, reprehenderit
+                laboriosam officiis praesentium? Impedit minus provident
+                assumenda quae.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./img/avater-4.jpg" alt="" />
+            <div class="info">
+              <h6>JONATHON ANDREW</h6>
+              <p>July 02, 2015, at 11:34 <i>+</i> Reply</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                at magna ut ante eleifend eleifend.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Quod laborum minima, reprehenderit
+                laboriosam officiis praesentium? Impedit minus provident
+                assumenda quae.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./img/avater-1.jpg" alt="" />
+            <div class="info">
+              <h6>JONATHON ANDREW</h6>
+              <p>July 02, 2015, at 11:34 <i>+</i> Reply</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                at magna ut ante eleifend eleifend.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Quod laborum minima, reprehenderit
+                laboriosam officiis praesentium? Impedit minus provident
+                assumenda quae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <h3 class="main-title">TRENDY PRODUCTS</h3>
+        <div class="container">
+          <div class="product">
+            <div class="image">
+              <div class="box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <img src="./img/download_9.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h4>Strayhorn SP</h4>
+              <p>$230</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image">
+              <div class="box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <img src="./img/download_12.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h4>Rainbow Shoes</h4>
+              <p>$200</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="image sale">
+              <div class="box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <img src="./img/download_13.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h4>Rainbow Shoes</h4>
+              <p>$200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="icon">
+          <i class="fa-brands fa-facebook-f"></i
+          ><i class="fa-brands fa-instagram"></i
+          ><i class="fa-brands fa-twitter"></i
+          ><i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="item">
+          <a href="./contact.html">CONTACT </a><a href="./shop.html"> SHOP </a
+          ><a href="./pricing.html"> PRICING </a><a href="">POLICY</a>
+        </div>
+        <div class="copy">
+          Copyright ©2021, Designed & Developed by <span>Themefisher</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

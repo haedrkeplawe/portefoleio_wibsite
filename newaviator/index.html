@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="aviator">
+      <p>0129- 12323-123123</p>
+      <h2><a href="#">AVIATO</a></h2>
+      <ul>
+        <div class="cart">
+          <li>
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+          </li>
+          <div class="products">
+            <div class="product">
+              <div>
+                <img src="./img/cart-1.jpg" alt="" />
+                <div class="info">
+                  <h5>Ladees Bag</h5>
+                  <h6>1+12500.00</h6>
+                  <p>$1200</p>
+                </div>
+              </div>
+              <span class="delete">+</span>
+            </div>
+            <div class="product">
+              <div>
+                <img src="./img/cart-2.jpg" alt="" />
+                <div class="info">
+                  <h5>Ladees Bag</h5>
+                  <h6>1+12500.00</h6>
+                  <p>$1200</p>
+                </div>
+              </div>
+              <span class="delete">+</span>
+            </div>
+            <div class="total">
+              <h4>Total</h4>
+              <h5>$1113.00</h5>
+            </div>
+            <div class="buttons">
+              <button>VIEW CART</button>
+              <button>CHECKOUT</button>
+            </div>
+          </div>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <li>Search</li>
+          <div><input type="text" placeholder="Search" /></div>
+        </div>
+        <li>EN <i class="fa-solid fa-angle-down"></i></li>
+      </ul>
+    </div>
+    <nav>
+      <div class="head">
+        <h2>Main Menu</h2>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul>
+        <li><a href="./index.html">HOME </a></li>
+        <div>
+          <li><a>SHOP</a><i class="fa-solid fa-angle-down"></i></li>
+          <div class="ul">
+            <li><a href="./dashboard.html">dashboard</a></li>
+            <li><a href="./product.html">product</a></li>
+            <li><a href="./shop.html">shop</a></li>
+            <li><a href="./shop_sidebar.html">shop sidebar</a></li>
+            <li><a href="./pricing.html">pricing</a></li>
+            <li><a href="./cart.html">cart</a></li>
+          </div>
+        </div>
+        <div>
+          <li><a>PAGES</a><i class="fa-solid fa-angle-down"></i></li>
+          <div class="ul">
+            <li><a href="./blog.html">blog</a></li>
+            <li><a href="./blog-singel.html">blog-singel</a></li>
+            <li><a href="./about-us.html">about-us</a></li>
+            <li><a href="./contact.html">contact</a></li>
+          </div>
+        </div>
+        <div>
+          <li><a>LOGIN</a><i class="fa-solid fa-angle-down"></i></li>
+          <div class="ul">
+            <li><a href="./signin.html">signin</a></li>
+            <li><a href="./login.html">login</a></li>
+            <li><a href="./forget.html">forget</a></li>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <section class="imager">
+    <div>
+      <div class="container">
+        <div style="left: 0%" class="image active" id="one"></div>
+        <div style="left: 100%" class="image hidden" id="two"></div>
+        <div style="left: 100%" class="image hidden" id="three"></div>
+        <div class="button">
+          <div onclick="doun()" class="doun">+</div>
+          <div onclick="up()" class="up">></div>
+        </div>
+        <div class="card">
+          <h4>PRODUCTS</h4>
+          <h2>
+            the beauty of nature <br />
+            id hidden in details.
+          </h2>
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="next">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+  <!-- CATEGORY -->
+  <section class="catugory">
+    <h3 class="main-title">PRODUCT CATEGORY</h3>
+    <div class="container">
+      <div class="one">
+        <div>
+          <div class="unet">
+            <div class="info">
+              <h3>Clothes Sales</h3>
+              <p>Shop New Season Clothing</p>
+            </div>
+            <img src="./img/download_4.jpg" alt="" />
+          </div>
+          <div class="unet">
+            <div class="info">
+              <h3>Smart Casuals</h3>
+              <p>Get Wide Range Selection</p>
+            </div>
+            <img src="./img/download_5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="two">
+        <div style="position: relative">
+          <div class="info">
+            <h3>Jewellery</h3>
+            <p>Special Design Comes First</p>
+          </div>
+          <img src="./img/download_6.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PRODUCTS -->
+  <div class="products">
+    <h3 class="main-title">TRENDY PRODUCTS</h3>
+    <div class="container">
+      <div class="product">
+        <div class="image sale">
+          <div class="box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <img src="./img/download_7.jpg" alt="" />
+        </div>
+        <div class="info">
+          <h4>Rainbow Shoes</h4>
+          <p>$200</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image">
+          <div class="box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <img src="./img/download_8.jpg" alt="" />
+        </div>
+        <div class="info">
+          <h4>Reef Boardsport</h4>
+          <p>$200</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image">
+          <div class="box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <img src="./img/download_9.jpg" alt="" />
+        </div>
+        <div class="info">
+          <h4>Strayhorn SP</h4>
+          <p>$230</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image">
+          <div class="box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <img src="./img/download_10.jpg" alt="" />
+        </div>
+        <div class="info">
+          <h4>Bradley Mid</h4>
+          <p>$200</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image">
+          <div class="box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <img src="./img/download_11.jpg" alt="" />
+        </div>
+        <div class="info">
+          <h4>Rainbow Shoes</h4>
+          <p>$200</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image">
+          <div class="box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <img src="./img/download_12.jpg" alt="" />
+        </div>
+        <div class="info">
+          <h4>Rainbow Shoes</h4>
+          <p>$200</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image sale">
+          <div class="box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <img src="./img/download_13.jpg" alt="" />
+        </div>
+        <div class="info">
+          <h4>Rainbow Shoes</h4>
+          <p>$200</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image">
+          <div class="box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <img src="./img/download_14.jpg" alt="" />
+        </div>
+        <div class="info">
+          <h4>Rainbow Shoes</h4>
+          <p>$200</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="image">
+          <div class="box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <img src="./img/download_15.jpg" alt="" />
+        </div>
+        <div class="info">
+          <h4>Rainbow Shoes</h4>
+          <p>$200</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SUBSCRIBE  -->
+  <footer>
+    <div class="subscribe">
+      <h3>SUBSCRIBE TO NEWSLETTER</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat,
+        <br />
+        facilis numquam impedit ut sequi. Minus facilis vitae excepturi sit
+        laboriosam.
+      </p>
+      <div class="input">
+        <input type="text" placeholder="Enter Your Email Address" />
+        <button>SUBSCRIBE Now!</button>
+      </div>
+    </div>
+    <span>VIEW US ON INSTAGRAM</span>
+    <div class="footer">
+      <div class="icon">
+        <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-instagram"></i><i
+          class="fa-brands fa-twitter"></i><i class="fa-brands fa-tiktok"></i>
+      </div>
+      <div class="item">
+        <a href="./contact.html">CONTACT </a><a href="./shop.html"> SHOP </a><a href="./pricing.html"> PRICING </a><a
+          href="">POLICY</a>
+      </div>
+      <div class="copy">
+        Copyright ©2021, Designed & Developed by <span>Themefisher</span>
+      </div>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>
